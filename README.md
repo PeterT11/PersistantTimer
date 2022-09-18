@@ -1,6 +1,6 @@
 # Client side persistant timer 
 
-This small react hook can be easily used to implement a timer as well as a countdown timer. 
+This small react hook can be easily used to implement a timer as well as a **countdown timer**. 
 This timer use localstorage to save the data, so it can permeanatly stay in a browser unless user delete it.
 It can be used to know how long user has viewed a webpage( timer will defaultly pause if the webpage lost focus, such as switch to another tab or switch to another app, you can override with parameters )
 
@@ -8,7 +8,9 @@ It can be used to know how long user has viewed a webpage( timer will defaultly 
 you can simply use like this:
 
   `const [count,start,pause,reset] = usePersistantTimer()` default parameters
+
   or
+
   `const [count,start,pause,reset] = usePersistantTimer(false,{updateFrequency:10})` set pauseOnNoFocus false and set the update frequency of return varaible 'count' to 10s, default is 1s.
 
 
